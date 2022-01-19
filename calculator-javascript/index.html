@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevJane Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+       
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/dev.png" alt="alicia">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav_list">
+                <li class="nav_item"><a href="../index.html#home" class="nav_link">Home</a></li>
+                <li class="nav_item"><a href="../index.html#skills" class="nav_link">My Skills</a></li>
+                <li class="nav_item"><a href="../index.html#about" class="nav_link">About Me</a></li>
+                <li class="nav_item"><a href="../index.html#work" class="nav_link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro" id="home">
+        <h1 class="section_title section_title-intro">
+             <strong>Calculator</strong>
+        </h1>
+        <p class="section_subtitle section_subtitle-intro">Front-End Web Dev</p>
+    </section>
+ 
+    <div class="body">
+        <div class="calculator-grid" id="calc">
+            <div class="output">
+                <div data-previous-operand class="previous-operand"></div>
+                <div data-current-operand class="current-operand"></div>
+            </div>
+            <button data-clear class="span-two">AC</button>
+            <button data-delete>DEL</button>
+            <button data-operation>÷</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operation>*</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operation>+</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operation>-</button>
+            <button data-number>.</button>
+            <button data-number>0</button>
+            <button data-equal class="span-two">=</button>
+        </div>
+      
+    </div>
+
+   <div class="arrow">
+    <button id="page-up" class="pageUp" title="Go to top">
+        ^
+        </button>
+   </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="mailto:alicia.harewoodbcc@gmail.com" class="footer_link">alicia.harewoodbcc@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list_item"><a class="social-list_link" href="https://codepen.io"><i class="fab fa-codepen"></i></a></li>
+            <li class="social-list_item"><a class="social-list_link" href="http://dribbble.com"><i class="fab fa-dribbble"></i></a></li> 
+            <li class="social-list_item"><a class="social-lis__link" href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+            <li class="social-list_item"><a class="social-list_link" href="https://github.com"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
