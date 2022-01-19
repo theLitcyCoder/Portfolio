@@ -252,6 +252,10 @@ header{
 
 
 /* Intro section */
+.body-dark{
+    background-color: var(--clr-dark);
+    background: var(--clr-dark);
+}
 
 .intro {
     position: relative;
