@@ -285,52 +285,6 @@ header{
     }
 }
 
-/* My skills section */
-
-.my-skills {
-    background-color: var(--clr-dark);
-    background-image: url(../images/services-bg.jpg);
-    background-size: cover;
-    color: var(--clr-light);
-    text-align: center;
-}
-
-.section_title-skills{
-    color:var(--clr-accent2);
-    position: relative;
-}
-
-.section_title-skills::after{
-    content: '';
-    display: block;
-    width: 2em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.5;
-}
-
-.skills{
-    margin-bottom: 4em;
-}
-
-.skill {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-@media (min-width: 800px){
-    .skills {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .skill + .skill{
-        margin-left: 2em;
-    }
-}
 
 .about-me{
     max-width:1000px;
