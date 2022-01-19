@@ -254,6 +254,8 @@ header{
 
 .intro {
     position: relative;
+    background: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 .section_subtitle-intro{
