@@ -72,6 +72,7 @@ strong {
     background-color: var(--clr-dark);
     background: var(--clr-dark);
 }
+
 .btn{
     display: inline-block;
     padding: .5em 2.5em;
@@ -105,7 +106,11 @@ h3 { font-size: var(--fs-h3) }
 
 .section_title{
     margin-bottom: .25em;
-    
+    color: var(--clr-light)
+}
+
+.section_title-about{
+    color: var(--clr-dark)
 }
 
 .section_title-intro {
@@ -117,7 +122,7 @@ h3 { font-size: var(--fs-h3) }
 }
 
 .section_subtitle{
-   
+  
     margin: 0;
     font-size: var(--fs-h3);
     color: var(--clr-light);
@@ -296,10 +301,22 @@ header{
 
 
 .about-me{
-    max-width:1000px;
+    width: 100%;
     margin: 0 auto;
+    background: #fff;
+   
 }
 
+.about-me_body{
+    width:50%;
+    margin: 0 auto; 
+    background: #fff;
+}
+
+.section_subtitle-about{
+    width:50%;
+    margin: 0 auto; 
+}
 /* My work */
 
 .my-work{
