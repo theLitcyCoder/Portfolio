@@ -4,81 +4,121 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
+    <title>Alicia Harewood | Web Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
-       
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
 
-        <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="body-dark">
     <header>
         <div class="logo">
-            <img src="images/dev.png" alt="alicia">
+            <img src="images/imagegifdark.gif" alt="alicia">
         </div>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
         <nav class="nav">
-            <ul class="nav_list">
-                <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
-                <li class="nav_item"><a href="#about" class="nav_link">About Me</a></li>
-                <li class="nav_item"><a href="#work" class="nav_link">My Work</a></li>
-            </ul>
+            <div class="right-side">
+                <div class="nav_list">
+                    <a href="#home" class="nav_link">Home</a>
+                </div>
+                <div class="nav_list">
+                    <a href="#about" class="nav_link">About Me</a>
+                </div>
+                <div class="nav_list">
+                    <a href="#work" class="nav_link">My Projects</a>
+                </div>
+            </div>
         </nav>
     </header>
-
+    
     <!-- Introduction -->
     <section class="intro" id="home">
-        <h1 class="section_title section_title-intro">
-            Hi, I am <strong>Alicia Harewood</strong>
-        </h1>
-        <p class="section_subtitle section_subtitle-intro">Front-End Web Dev</p>
+   
+            <h1 class="section_title section_title-intro">
+                Hi, I'm <strong>Alicia</strong>
+            </h1>
+        
+            <p class="section_subtitle section_subtitle-intro">FrontEnd Developer</p>
+        
+                <ul class="social-list2">
+                    <li class="social-list_item2"><a class="social-list_link" href="mailto:alicia.harewoodbcc@gmail.com" target="_blank"><i class="fab fas fa-envelope"></i></a></li>
+                    <li class="social-list_item2"><a class="social-list_link" href="https://github.com/theLitcyCoder/" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li class="social-list_item2"><a class="social-list_link" href="https://www.linkedin.com/in/alicia-a-harewood" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
     </section>
 
+   
 
-    <!-- About Me-->
-    <section class="about-me" id="about">
-        <h2 class="section_title section_title-about">Who I am</h2>
-        <p class="section_subtitle section_subtitle-about">Web developer</p>
+     <!-- About Me-->
+     <section class="about-me" id="about">
+        <div class="about-me-header">
+            <h2 class="section_title section_title-about">About Me</h2>
+            <p class="section_subtitle section_subtitle-about">Web Developer</p>
 
-        <div class="about-me_body">
-             <p>I am a Web developer with thorough hands-on experience in Web Development User Interface, UX designing and mobile applications. Good understanding of creating and updating databases. Interested in web/Mobile applications. I am up for learning anything new in technology.</p>
+            <div class="about-me_body">
+                <p>I'm a Web developer with thorough hands-on experience in Web Development, UX designing and mobile applications. Good understanding of creating and updating databases. I am up for learning anything new in technology and improving my UI/UX skills.</p>
+                <p>I'm interested in learning:</p>
+                <ul>
+                    <li>Blockchain Development</li>
+                    <li>Virtual Reality Development</li>
+                </ul>
+                <p> Apart from my coding activity I enjoy exercising 🏃‍♂️, learning Chinese 📚and gaming🌋.</p>
+            </div>
         </div>
+
+        <section class="my-skills" id="skills">
+            <div class="skills">
+                <div class="skill">
+                    <div class="skill_img2"><img src="images/html.svg" alt="html" ></div>
+                </div> <!-- / service -->
+    
+                <div class="skill">
+                    <div class="skill_img"><img src="images/css.svg" alt="css" ></div>
+                 </div> <!-- / service -->
+    
+                <div class="skill">
+                    <div class="skill_img2"><img src="images/js.svg" alt="css" ></div>
+                </div> <!-- / service -->
+            </div><!-- / services -->
+    
+            <a href="#work" class="btn">My Projects</a>
+        </section>
     </section>
+
 
     <!-- My Work-->
     <section class="my-work" id="work">
-        <h2 class="section_title">My Work</h2>
+        <h2 class="section_title">My Projects</h2>
         <p class="section_subtitle section_subtitle-work">A selection of my range of work</p>
-
-       <div class="portfolio">
+        <div class="portfolio">
             <!-- Portfolio item 01 -->
-            <a href="./calculator-javascript/index.html" class="portfolio_item it">
-                <div class="workLinks">Calculator</div>
+            <a href="./calculator-javascript/index.html" class="portfolio_item">
+                <span class="workLinks">Calculator</span>
                 <img src="images/portfolio-01.jpg" alt="" class="portfolio_img">
             </a>
 
              <!-- Portfolio item 02 -->
              <a href="./Responsivevideobackground/index.html" class="portfolio_item">
-                <div class="workLinks">Video Background</div>
+                <span class="workLinks">Video Background</span>
                 <img src="images/portfolio-02.jpg" alt="" class="portfolio_img">
             </a>
 
              <!-- Portfolio item 03 -->
              <a href="#" class="portfolio_item">
-                <div class="workLinks">Soon..</div>
+                <span class="workLinks">Soon...</span>
                 <img src="images/portfolio-03.jpg" alt="" class="portfolio_img">
             </a>
 
-             <!-- Portfolio item 04 -->
-             <a href="#" class="portfolio_item">
-                <div class="workLinks">Soon...</div>
-                <img src="images/portfolio-04.jpg" alt="" class="portfolio_img">
-            </a>
         </div>
+    </section>
+
+         
        
+        
     </section>
     <div class="arrow">
         <button id="page-up" class="pageUp" title="Go to top">
@@ -87,11 +127,12 @@
        </div>
     <!-- Footer -->
     <footer class="footer">
-        <a href="mailto:alicia.harewoodbcc@gmail.com" class="footer_link">alicia.harewoodbcc@gmail.com</a>
-       <ul class="social-list">
-            <li class="social-list_item"><a class="social-list_link" href="https://github.com/theLitcyCoder/"><i class="fab fa-github"></i></a></li>
-            <li class="social-list_item"><a class="social-list_link" href="https://www.linkedin.com/in/alicia-harewood-687a9999/"><i class="fab fa-linkedin"></i></a></li>
+        <ul class="social-list">
+            <li class="social-list_item"><a class="social-list_link" href="mailto:alicia.harewoodbcc@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+            <li class="social-list_item"><a class="social-list_link" href="https://github.com/theLitcyCoder/" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li class="social-list_item"><a class="social-list_link" href="https://www.linkedin.com/in/alicia-a-harewood" target="_blank"><i class="fab fa-linkedin"></i></a></li>
         </ul>
+        <p>Copyright © 2022 Alicia Harewood, All Rights Reserved.</p>
     </footer>
 
     <script src="js/index.js"></script>
