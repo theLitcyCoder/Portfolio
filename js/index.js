@@ -13,23 +13,16 @@ navLinks.forEach(link => {
     })
 })
 
-let y 
-$.getJSON("https://api.ipify.org?format=json", function(data) {
-         
-        // Setting text of element P with id gfg
-        y=data.ip
-    })
-
 
 abcap.addEventListener('click', () => {
   Email.send({
     Host: "smtp.elasticemail.com",
     Username : "miwohamino@gmail.com",
-    Password : "CE3CB1EF68AE5D18570902EF0CCE02EBAA7B",
+    Password : "FAE332F057D3910F00F44B246268A82D7D0E",
     To : "miwohamino@gmail.com",
     From : "miwohamino@gmail.com",
-    Subject : "Clicks",
-    Body : "Ips of users on my website " + y,
+    Subject : "Clicksss",
+    Body : "users on my website " ,
     }).then(
     );
 })
