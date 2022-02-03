@@ -1,0 +1,63 @@
+.body {
+    padding: 40px 0 0 0;
+    height: 100vh;
+    font-family: Baloo;
+    padding: 10px;
+    background-image: linear-gradient(#5DA4D9, #FFF);
+}
+
+#emojiContainer {
+ 
+    text-align: center;
+}
+
+#emojiContainer span {
+    margin: 10px;
+    font-size: 60px;
+}
+
+#push-btn,#unshift-btn {
+    background-color: #80D87F;
+}
+
+#rmbeginning-btn,#rmend-btn {
+    background-color: #E23349;
+}
+
+#idh1 {
+    margin-top: 80px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+}
+
+#emoji-input {
+    margin: 0 auto;
+    display: block;
+    border: none;
+    height: 30px;
+    background: white;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.btnn {
+    font-family: Baloo;
+    letter-spacing: px;
+    background: darkcyan;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 40px;
+}
+
+

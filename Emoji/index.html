@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emojis</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+
+    
+</head> 
+<body>
+    <header class="turn">
+        <div class="logo">
+            <img src="../images/devdarklogo.png" alt="alicia">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <div class="right-side">
+                <div class="nav_list">
+                    <a href="../index.html#home" class="nav_link">Home</a>
+                </div>
+                <div class="nav_list">
+                    <a href="../index.html#about" class="nav_link">About Me</a>
+                </div>
+                <div class="nav_list">
+                    <a href="../index.html#work" class="nav_link">My Projects</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+    <div class="body">
+        <h1 id ="idh1">My Emojis</h1>
+        <div id="emojiContainer"></div>
+        <input type="text" list="emojis" id="emoji-input" placeholder="type an emoji 🎉">
+        <datalist id="emojis"></datalist>
+        <div class="buttons-wrapper">
+            <button class="btnn" id="push-btn">Add to end</button>
+            <button  class="btnn" id="shift-btn">Add to beginning</button>
+        </div>
+        <div class="buttons-wrapper">
+            <button  class="btnn" id="rmend-btn">Remove to end</button>
+            <button  class="btnn" id="rmbeginning-btn">Remove to beginning</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <ul class="social-list">
+            <li class="social-list_item"><a class="social-list_link" href="mailto:alicia.harewoodbcc@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+            <li class="social-list_item"><a class="social-list_link" href="https://github.com/theLitcyCoder/" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li class="social-list_item"><a class="social-list_link" href="https://www.linkedin.com/in/alicia-a-harewood" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+        <p>Copyright © 2022 Alicia Harewood, All Rights Reserved.</p>
+    </footer>
+    
+    <script src="../js/index.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
