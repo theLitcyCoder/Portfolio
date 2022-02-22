@@ -1,4 +1,6 @@
 const myEmojis = ["👨‍💻", "⛷", "🍲"]
+const emos = ["🙂","😁","🙃", "😀", "😃", "😄","👨‍💻", "⛷", "🍲"]
+let emote = document.getElementById('emojis')
 
 const emojis = document.getElementById('emojiContainer')
 
@@ -7,8 +9,6 @@ const btn = document.getElementById('push-btn')
 const unshift = document.getElementById('shift-btn')
 const removeB = document.getElementById('rmbeginning-btn')
 const removeE = document.getElementById('rmend-btn')
-
-
 
 
 function renderEmojis ()
@@ -59,3 +59,14 @@ removeE.addEventListener('click', () => {
     emojis.innerHTML= ""
     renderEmojis()
 })
+
+let allNamesDOMCollection = document.getElementsByClassName('name');
+for (const [key, value] of Object.entries(emos)) {
+    let emo = document.createElement('option');
+    emo.innerHTML=""
+    emo.classList.add("name")
+    emo.value = value
+    
+    if(allNamesDOMCollection.length !== emos.length)
+        emote.appendChild(emo)
+}
