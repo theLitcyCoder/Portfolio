@@ -24,4 +24,4 @@ Upcoming Projects
   
 UPDATES
 
-Emojis - Added emojis icons
+Emojis - Added emojis icons options
