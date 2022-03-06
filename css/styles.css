@@ -548,7 +548,7 @@ a {
 
 
 /* Arrow */
-.arrow{
+/* .arrow{
     position: fixed;
     bottom: 0;
     font-size: var(--fs-h2);
@@ -556,7 +556,7 @@ a {
     color: white;
     width: 100%;
    
-}
+} */
 .pageUp{
     position: absolute;
     background-color: #f8333c;
