@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design*/
 :root{
     --ff-primary: 'Lora', serif;
     --ff-secondary: 'Roboto Slab', serif;
@@ -35,8 +34,6 @@
         --fs-body: 1.125rem;
     }
 }
-
-/* General Styles */
 
 html{
     scroll-behavior: smooth;
@@ -168,16 +165,14 @@ header{
 }
 
 .logo{
+    position: relative;
     max-width: 100px;
-    margin-top: 0;
-    min-height: 10vh;
-    height: 11vh;
-    padding-bottom: 10vh;
+  
 }
 
 .logo img{
-   
-    padding-top: -10vh;
+    z-index: 2
+    /* padding-top: -10vh; */
 }
 .nav {
     display:flex;
@@ -188,7 +183,6 @@ header{
     left: 0;
     right: 0;
     color: var(--clr-light);
-    /* padding-top: 20px; */
     height:45px;
     width: 100%;
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1); 
@@ -197,15 +191,16 @@ header{
 .right-side{
     display: flex;
     background-color: var(--clr-dark);
-    padding-top: 4vh;
+    padding: 30px 0;
+    justify-content: center;
 }
 
 .nav_list{
- /* justify-content: space-between;
+    justify-content: space-between;
     flex-direction:row;
     list-style: none;
     padding-right: 40px;
-    padding-left: 40px; */
+    padding-left: 40px;
     margin-right: 20px;
     height: 22px;
 }
@@ -232,11 +227,11 @@ a {
 }
 
 .nav-toggle{
-display: none;
+    display: none;
 }
 
 
-@media(max-width: 950px){
+@media(max-width: 960px){
     .right-side{
         display: block;
         height: 300px;
@@ -259,22 +254,24 @@ display: none;
         background: var(--clr-dark);
         z-index: 100;  
         max-width: 50%;
+        padding: 20px 0 0 0;
         transform: translateX(200%);
         transition: transform 0ms cubic-bezier(.5, 0, .5, 1); 
     }
 
     .nav_list {
         display: flex;
-        height: 100px;
         flex-direction:column;
         justify-content: space-evenly;
-        align-items: center;
-        margin: 0;
+        align-items: center;   
+        text-align: center;    
+        padding: 40px 0 50px 30px;
     }
 
     .nav-link{
         font-size: var(--fs-h3);
     }
+
     .nav-open .nav{
         transform: translateX(100%);
      }
@@ -295,7 +292,6 @@ display: none;
        opacity: 0;
      }
 }
-
 
 
 /* Hamburger */
@@ -331,7 +327,6 @@ display: none;
 .hamburger::after{
     bottom: 6px;
 }
-
 
 
 /* Intro section */
@@ -442,8 +437,6 @@ display: none;
 }
 
 
-
-
 /*  My skills section  */
 
 .my-skills {
@@ -478,7 +471,6 @@ display: none;
     margin: 0 auto;
 }
 
-
 .skills {
     display: flex;
     max-width: 1000px;
@@ -494,7 +486,6 @@ display: none;
     }
 
 }
-
 
 
 /* My work */
@@ -575,10 +566,6 @@ display: none;
     right: 0;
     display: block;
 }
-
-
-
-
 
 
 /* Footer */
