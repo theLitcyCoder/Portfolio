@@ -10,14 +10,14 @@ Updates will be posted here and the detailed update of the projects will be link
 My Projects
 
 - Portfolio
-- Todo List
+- Notez - A Notepad Web App (Angular)
 - Calculator
 - Emojis
 
 
 Upcoming Projects
 
-- React Ecommerce Website
+- Food Ordering App (Angular)
   
   
   --------------------------
