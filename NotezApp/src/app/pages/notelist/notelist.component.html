@@ -1,0 +1,124 @@
+
+  <div class="main-container">
+    <div>
+        <button mat-fab class="addBtn" color="primary" name="add" (click)="openAddForm(addTemp)">
+          <mat-icon>add</mat-icon>
+        </button>
+        <mat-form-field class="search-bar-container" appearance="outline">
+            <input matInput #filterInput placeholder="Search" name="search" type="text" (keyup)="filter($any($event).target.value)">
+            <mat-icon color="primary" matSuffix>search</mat-icon>
+        </mat-form-field>
+      
+    </div>
+    
+    <div class="notes-list">
+          <div class="card" *ngFor="let note of filteredNotes" (click)="getNoteDetails(note);openUpdateForm(updateTemp)"  >           
+            <mat-card #container class="note-card-container">              
+                  <mat-card-title-group> 
+                    <mat-card-title>{{note.title}}</mat-card-title>
+                    <div class="delete-button-container">
+                      <!-- <button mat-icon-button color="warn" name="edit">
+                          <mat-icon>edit</mat-icon>
+                      </button> -->
+                      <button mat-icon-button color="warn" (click)="deleteNote(note);openConfirmDeleteForm(confirmDelete, $event)">
+                        <mat-icon>delete</mat-icon>
+                      </button>
+                    </div>
+                </mat-card-title-group>
+                
+                <mat-card-content>          
+                    <p>{{note.desc}}</p>
+                    <div class="fade-out-truncation"></div>
+                </mat-card-content>
+             </mat-card>
+            </div>
+          
+        </div>
+       
+  </div>
+
+
+<ng-template #addTemp>
+<!-- Modal Add Notes -->
+<div class="form-container">
+   
+  <form [formGroup]="noteForm">
+      <h1 mat-dialog-title>Add Note</h1>
+      <mat-dialog-content>
+        <div class="form-field">
+            <mat-form-field appearance="outline">
+                <mat-label>Title</mat-label>
+                <input matInput type="text" name="Title" formControlName="title" type="text" [(ngModel)]="title" required>
+                <button matSuffix mat-icon-button aria-label="Clear" name="clear" >
+                  <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+        <div class="form-field">
+            <mat-form-field appearance="outline">
+                <mat-label>Description</mat-label> 
+                <textarea matInput name="Body" formControlName="desc" [(ngModel)]="desc"></textarea>
+                <button matSuffix mat-icon-button aria-label="Clear" name="clear">
+                  <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+      </mat-dialog-content>
+      <mat-dialog-actions align="end">
+        <button type="button" mat-stroked-button color="primary" mat-dialog-close data-bs-dismiss="form-container">Cancel</button>
+        <div class="buttons is-grouped is-pulled-right">
+          <button class="saveBtn" mat-raised-button color="green" mat-dialog-close  type="button" (click)="addNote()" [disabled]="!canSave()">save</button>
+       </div>
+      </mat-dialog-actions>
+  </form>
+</div>
+
+</ng-template>
+
+<ng-template #updateTemp class="temp">
+<div class="form-container">
+  <form [formGroup]="editForm">
+    <h1 mat-dialog-title>Update Note</h1>
+      <mat-dialog-content>
+        <div class="form-field">
+            <mat-form-field appearance="outline">
+                <mat-label>Title</mat-label>
+                <input matInput type="text" name="Title" formControlName="editTitle" [(ngModel)]="noteDetails.title" required>
+                <button matSuffix mat-icon-button aria-label="Clear" name="clear" >
+                  <mat-icon>close</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+        <div class="form-field">
+            <mat-form-field appearance="outline">
+                <mat-label>Description</mat-label>
+                  <textarea id="description" matInput name="Body" formControlName="editDesc" [(ngModel)]="noteDetails.desc">w</textarea>
+                  <button matSuffix mat-icon-button aria-label="Clear" name="clear">
+                    <mat-icon>close</mat-icon>
+                  </button>
+            </mat-form-field>
+        </div>
+        </mat-dialog-content>
+        <mat-dialog-actions align="end">
+      <button type="button" mat-stroked-button color="primary" mat-dialog-close data-bs-dismiss="form-container">Cancel</button> 
+      <div class="buttons is-grouped is-pulled-right">
+        <button class="saveBtn" mat-raised-button color="green"  mat-dialog-close type="button" (click)="updateNote(noteDetails)"  [disabled]="editForm.invalid">Update</button>
+      </div>
+      </mat-dialog-actions> 
+  </form>
+  
+</div>
+</ng-template>
+
+<ng-template #confirmDelete id="confirm">
+  <div >
+    <h1 mat-dialog-title>Delete Note</h1>
+    <div mat-dialog-content>
+      Are you sure you want to delete this note? 
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button mat-dialog-close (click)="delete()">Yes</button>
+      <button mat-button mat-dialog-close cdkFocusInitial>Cancel</button>
+    </div>
+  </div>
+</ng-template>
