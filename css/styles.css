@@ -167,7 +167,6 @@ header{
 .logo{
     position: relative;
     max-width: 100px;
-  
 }
 
 .logo img{
@@ -295,7 +294,6 @@ a {
 
 
 /* Hamburger */
-
 .hamburger{
     display: block;
     position: relative;
@@ -478,6 +476,10 @@ a {
     margin-right: auto;
 }
 
+.skill_img{
+margin-top: 10px;
+}
+
 
 @media (min-width: 800px) {
     
@@ -535,9 +537,10 @@ a {
     top: 50%;
     justify-content: center;
     font-weight: var(--fw-bold);
-    background: hsla(0, 54%, 65%, 0.8);
+    background: hsla(0, 4%, 17%, 0.8);
     font-size: 1.5em;
-    padding: 0;
+    padding: 10px 50px;
+    border-radius: 2%;
 }
 
 .portfolio a {
@@ -569,7 +572,6 @@ a {
 
 
 /* Footer */
-
 .footer{
     background: #111;
     color: var(--clr-accent);
@@ -617,4 +619,3 @@ footer p{
 .social-list_link{
     padding: .5em;
 }
-
