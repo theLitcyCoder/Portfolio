@@ -35,7 +35,7 @@
     }
 }
 
-html{
+html, body{
     scroll-behavior: smooth;
 }
 
@@ -627,7 +627,7 @@ footer p{
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 1em 0 0;
+    margin: 2em 0 0;
     padding: 0;
 }
 
