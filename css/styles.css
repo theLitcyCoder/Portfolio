@@ -77,17 +77,18 @@ strong {
 
 .btn{
     display: inline-block;
-    padding: .5em 2.5em;
+    padding: .9em 2.5em;
     background: var(--clr-accent);
     color: var(--clr-light);
     cursor: pointer;
     text-decoration: none;
-    font-size: .8rem;
+    font-size: .9rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
     margin-bottom: 4em;
+    margin-top: 20px;
 }
 
 .btn:hover{
@@ -110,6 +111,7 @@ h3 { font-size: var(--fs-h3) }
 .section_title{
     margin-bottom: .25em;
     color: var(--clr-light);
+    font-size: 2.5em;
 }
 
 .section_title-about{
@@ -149,7 +151,6 @@ h3 { font-size: var(--fs-h3) }
 }
 
 /* header */
-
 header{
     display: flex;
     justify-content: space-between;
@@ -419,7 +420,7 @@ a {
 }
 
 .about-me_body{
-    width:50%;
+    width:51%;
     margin: 0 auto; 
     background: #fff;
     padding: 0;
@@ -430,7 +431,7 @@ a {
 }
 
 .section_subtitle-about{
-    width:50%;
+    width:51%;
     margin: 0 auto; 
 }
 
@@ -445,8 +446,8 @@ a {
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
-    height: 30vh;
-   padding-top: 10px;
+    height: 15vh;
+    padding-top: 10px;
 }
 
 .section_title-skills {
@@ -594,7 +595,7 @@ margin-top: 10px;
     background: #111;
     color: var(--clr-accent);
     text-align: center;
-    padding: .5em 0;
+    padding: .1em 0;
     font-size: var(--fs-h3);
     position: relative;
 }
@@ -626,7 +627,7 @@ footer p{
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 2em 0 0;
+    margin: 1em 0 0;
     padding: 0;
 }
 
