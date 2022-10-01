@@ -10,7 +10,7 @@ Updates will be posted here and the detailed update of the projects will be link
 My Projects
 
 - Portfolio
-- Notez - A Notepad Web App (Angular)
+- Notez - A Notepad Web App (Typescript)
 - Calculator
 - Emojis
 
