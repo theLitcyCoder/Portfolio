@@ -501,14 +501,14 @@ margin-top: 10px;
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(248px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-items: center;   
 }
 
 .portfolio_item{
-    background: var(--clr-accent);
     overflow: hidden;
     margin-right: 10px;   
+    margin-bottom: 10px;
 }
 
 .portfolio_img{
@@ -534,13 +534,31 @@ margin-top: 10px;
 .workLinks{
     position: relative;
     color: var(--clr-light);
-    top: 50%;
+    top: 35%;
     justify-content: center;
     font-weight: var(--fw-bold);
     background: hsla(0, 4%, 17%, 0.8);
     font-size: 1.5em;
     padding: 10px 50px;
     border-radius: 2%;
+}
+
+.desc{
+    position: relative;
+    
+    color: var(--clr-light);
+    /* justify-content: center; */
+    font-weight: var(--fw-bold);
+    background: rgb(0, 0, 0);
+    font-size: 1.5em;
+    /* padding: 5px 10px; */
+    border-radius: 2%;
+    height: 50px;
+}
+
+.lang_img{
+    display: inline;
+    float: left;
 }
 
 .portfolio a {
