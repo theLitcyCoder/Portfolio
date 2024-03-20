@@ -7,6 +7,11 @@ I have various projects in the works on my Portfolio with regular updates.
 
 Updates will be posted here and the detailed update of the projects will be linked.
 
+Currently Working On Projects
+
+- Game Mobile App
+
+  
 My Projects
 
 - Portfolio
@@ -17,10 +22,6 @@ My Projects
 - Emojis
 
 
-Currently Working On Projects
-
-- Game Mobile App
-  
   
   --------------------------
   
