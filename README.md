@@ -10,14 +10,16 @@ Updates will be posted here and the detailed update of the projects will be link
 My Projects
 
 - Portfolio
+- Alia
+- Encore.club Website
 - Notez - A Notepad Web App (Typescript)
 - Calculator
 - Emojis
 
 
-Upcoming Projects
+Currently Working On Projects
 
-- Food Ordering App (Angular)
+- Game Mobile App
   
   
   --------------------------
